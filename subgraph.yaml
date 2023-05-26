@@ -21,5 +21,5 @@ dataSources:
           file: ./abis/ConverterRegistryContract.json
       blockHandlers:
         - handler: handleBlock
-        startBlock: 11821734
+          startBlock: 11821734
       file: ./src/mappings/blocks.ts
