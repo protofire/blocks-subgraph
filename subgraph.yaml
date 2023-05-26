@@ -1,14 +1,14 @@
 specVersion: 0.0.2
-description: Indexing all Arbitrum One Block data
+description: Indexing all Harmony Testnet Block data
 repository: https://github.com/blocklytics/ethereum-blocks
 schema:
   file: ./schema.graphql
 dataSources:
   - kind: ethereum/contract
     name: ConverterRegistryContract
-    network: arbitrum-one
+    network: harmony-testnet
     source:
-      address: '0x0ddff327ddf7fe838e3e63d02001ef23ad1ede8e'
+      address: '0x50e2BE26A70EAbF7B2c4931185EFe74aEDAc66F5'
       abi: ConverterRegistryContract
     mapping:
       kind: ethereum/events
@@ -21,4 +21,5 @@ dataSources:
           file: ./abis/ConverterRegistryContract.json
       blockHandlers:
         - handler: handleBlock
+        startBlock: 11821734
       file: ./src/mappings/blocks.ts
