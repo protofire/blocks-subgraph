@@ -1,25 +1,25 @@
-specVersion: 0.0.2
-description: Indexing all Harmony Testnet Block data
+specVersion: 0.0.4
+description: Indexing Zora Sepolia Block data
 repository: https://github.com/blocklytics/ethereum-blocks
 schema:
   file: ./schema.graphql
 dataSources:
   - kind: ethereum/contract
-    name: ConverterRegistryContract
-    network: harmony-testnet
+    name: Multicall2
+    network: zora-sepolia
     source:
-      address: '0x50e2BE26A70EAbF7B2c4931185EFe74aEDAc66F5'
-      abi: ConverterRegistryContract
-      startBlock: 1
+      address: '0xb16C4F9F971cDDaAC6786ecbAe8BC4c68a937f9d'
+      abi: Multicall2
+      startBlock: 3415210
     mapping:
       kind: ethereum/events
-      apiVersion: 0.0.4
+      apiVersion: 0.0.6
       language: wasm/assemblyscript
       entities:
         - ConverterAddition
       abis:
-        - name: ConverterRegistryContract
-          file: ./abis/ConverterRegistryContract.json
+        - name: Multicall2
+          file: ./abis/Multicall2.json
       blockHandlers:
         - handler: handleBlock
       file: ./src/mappings/blocks.ts
