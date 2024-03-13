@@ -10,6 +10,7 @@ dataSources:
     source:
       address: '0x50e2BE26A70EAbF7B2c4931185EFe74aEDAc66F5'
       abi: ConverterRegistryContract
+      startBlock: 1
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.4
