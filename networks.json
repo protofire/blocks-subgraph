@@ -47,7 +47,7 @@
       "startBlock": 5617
     }
   },
-  "animeTestnet": {
+  "anime-testnet": {
     "ConverterRegistryContract": {
       "address": "0x0ddff327ddf7fe838e3e63d02001ef23ad1ede8e",
       "startBlock": 1651650
