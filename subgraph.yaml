@@ -6,11 +6,11 @@ schema:
 dataSources:
   - kind: ethereum/contract
     name: ConverterRegistryContract
-    network: redstone-garnet
+    network: mode
     source:
       abi: ConverterRegistryContract
       address: "0x0ddff327ddf7fe838e3e63d02001ef23ad1ede8e"
-      startBlock: 586081
+      startBlock: 19222570
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.6
