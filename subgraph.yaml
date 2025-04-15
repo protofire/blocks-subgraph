@@ -6,11 +6,11 @@ schema:
 dataSources:
   - kind: ethereum/contract
     name: ConverterRegistryContract
-    network: mode
+    network: anime
     source:
       abi: ConverterRegistryContract
       address: "0x0ddff327ddf7fe838e3e63d02001ef23ad1ede8e"
-      startBlock: 19222570
+      startBlock: 57516
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.6
