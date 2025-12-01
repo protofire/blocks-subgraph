@@ -70,5 +70,11 @@
       "address": "0x0ddff327ddf7fe838e3e63d02001ef23ad1ede8e",
       "startBlock": 33864834
     }
+  },
+  "stable": {
+    "ConverterRegistryContract": {
+      "address": "0x0ddff327ddf7fe838e3e63d02001ef23ad1ede8e",
+      "startBlock": 3442522
+    }
   }
 }
